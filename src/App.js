@@ -61,7 +61,7 @@ class App extends Component {
               <p>{todo.todoDescription}</p>
 
               <i className="far fa-trash-alt"></i>
-              <button className="btn btn-danger btn-sm" onClick={this.handleRemoveTodo.bind(this, index)}><span className="glyphicon glyphicon-trash"></span></button>
+              <button className="btn btn-danger btn-sm" onClick={this.handleRemoveTodo.bind(this, index)}><span className="glyphicon glyphicon-trash"></span>&nbsp;Delete</button>
             </li>
           )}
         </ul>
@@ -184,8 +184,5 @@ class TodoInput extends Component {
   }
 
 }
-
-
-
 
 export default App;
